@@ -1,7 +1,7 @@
 import SanPham from "../BaiTapRedux/BaiTapGioHangRedux/SanPham";
 
 const stateGioHang={
-    gioHang:[{maSP:1,tenSP:'iphone x',hinhAnh:'./img/sp_iphoneX.png',donGia:100000,soLuong:1}
+    gioHang:[
     ]
 }
 export const GioHangReducer=(state =stateGioHang,action)=>{
@@ -26,6 +26,25 @@ export const GioHangReducer=(state =stateGioHang,action)=>{
             //immutable laf timsj bat bien cua redux
             return {...state};
 
+        }
+        case 'Xoa_Gio_Hang':{
+            const gioHangCapNhat=[...state.gioHang];
+            let index=gioHangCapNhat.findIndex(sp=>sp.maSP===action.maSPXoa);
+            if(index!==-1)
+            {
+                gioHangCapNhat.splice(index,1);
+            }
+            state.gioHang=gioHangCapNhat;
+            return{...state};
+        }
+        case 'Tang_Giam_So_Luong':{
+            const gioHangCapNhat=[...state.gioHang];
+            let spGH=gioHangCapNhat.find(sp=>sp.maSP===action.maSPClick);
+            if(spGH){
+                spGH.soLuong+=action.soLuong;
+            }
+            state.gioHang=gioHangCapNhat;
+            return{...state};
         }
     }
     return state;

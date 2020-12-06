@@ -1,0 +1,11 @@
+.bgGame{
+    /* luu y link den casc hinh anh tu file scss hoac cc thi file nay toi file chua anh  */
+
+    
+    background-image: url('../../../assets/imgGame/bgGame.png');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}

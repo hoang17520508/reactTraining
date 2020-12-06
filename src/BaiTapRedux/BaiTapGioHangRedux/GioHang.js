@@ -26,9 +26,10 @@ import {connect} from 'react-redux';
                                 <td>{spGH.maSP}</td>
                         <td>{spGH.tenSP}</td>
                         <td><img width="100px" height="100px" src={spGH.hinhAnh}/></td>
-                        <td>{spGH.soLuong}</td>
+                        <td><button onClick={()=>this.props.tangGiamSoLuong(spGH.maSP,-1)}>-</button>{spGH.soLuong}<button onClick={()=>this.props.tangGiamSoLuong(spGH.maSP,1)}>+</button></td>
                         <td>{spGH.donGia}</td>
                         <td>{spGH.donGia}</td>
+                        <td><button className="btn btn-danger" onClick={()=>{this.props.xoaGioHang(spGH.maSP)}}>Xóa SP</button></td>
 
                             </tr>
                         })}
@@ -48,6 +49,28 @@ const mapStatetoProps=(state)=>{
         gioHang:state.stateGioHang.gioHang
     }
 }
+const mapDispatchToProps=(dispatch)=>{
+    return{
+        xoaGioHang:(maSPClick)=>{
+            console.log(maSPClick);
+
+            //dua du lieu len dedux (reducer)
+            const action={
+                type:'Xoa_Gio_Hang',
+                maSPXoa:maSPClick
+            }
+            dispatch(action);
+        },
+        tangGiamSoLuong:(maSPClick,soLuong)=>{
+            const action={
+                type:'Tang_Giam_So_Luong',
+                maSPClick:maSPClick,
+                soLuong:soLuong
+            };
+            dispatch(action);
+        }
+    }
+}
 
 //kết nối với react component với redux store tạo ra 1 conponent mới export ra ngoài
-export default connect(mapStatetoProps)(GioHang);
+export default connect(mapStatetoProps,mapDispatchToProps)(GioHang);
