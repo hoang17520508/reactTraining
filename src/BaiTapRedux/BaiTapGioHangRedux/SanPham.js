@@ -31,7 +31,7 @@ const mapDispatchToProps=(dispatch)=>{
                 //thuộc tính thứ 2 llaf giá trị guwit len redux
             }
             dispatch(action);
-            consolelog('spClick',spClick);
+            console.log('spClick',spClick);
         }
     }
 

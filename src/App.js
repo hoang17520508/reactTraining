@@ -40,8 +40,8 @@ function App() {
     {/* <BaiTapRenderDanhSachPhim/> */}
     {/* <Demoprops/>     */}
     {/* <ProductlistRCC/> */}
-    {/* <PropsWithEvent/> */}
-    <BaiTapGioHangRedux/>
+    <PropsWithEvent/>
+    {/* <BaiTapGioHangRedux/> */}
      </div>
   );
 }
