@@ -24,6 +24,7 @@ import BaiTapGameXucSac from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGameXucXac/
 import BaiTapQuanLySinhVien from './Form/BaiTapQuanLySinhVien';
 import ReactLifeCycle from './ReactLifeCycle/ReactLifeCycle';
 import BookingTicket from './BookingTicket/BookingTicket';
+import BaiTapOanTuXI from './BaiTapOanTuXi/BaiTapOanTuXI';
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
     {/* <BaiTapGameXucSac/> */}
     {/* <BaiTapQuanLySinhVien/> */}
     {/* <ReactLifeCycle/> */}
-    <BookingTicket/>
+    {/* <BookingTicket/> */}
+    <BaiTapOanTuXI/>
      </div>
   );
 }
