@@ -21,6 +21,9 @@ import ProductList from './Props/PropsWithEvent/ProductList';
 import PropsWithEvent from './Props/PropsWithEvent';
 import BaiTapGioHangRedux from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGioHangRedux';
 import BaiTapGameXucSac from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGameXucXac/BaiTapGameXucSac';
+import BaiTapQuanLySinhVien from './Form/BaiTapQuanLySinhVien';
+import ReactLifeCycle from './ReactLifeCycle/ReactLifeCycle';
+import BookingTicket from './BookingTicket/BookingTicket';
 
 
 function App() {
@@ -43,7 +46,10 @@ function App() {
     {/* <ProductlistRCC/> */}
     {/* <PropsWithEvent/> */}
     {/* <BaiTapGioHangRedux/> */}
-    <BaiTapGameXucSac/>
+    {/* <BaiTapGameXucSac/> */}
+    {/* <BaiTapQuanLySinhVien/> */}
+    {/* <ReactLifeCycle/> */}
+    <BookingTicket/>
      </div>
   );
 }

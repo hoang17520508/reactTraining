@@ -8,4 +8,9 @@
     height: 100%;
     top:0;
     left: 0;
+    font-family: 'fontGame';
+}
+@font-face {
+    font-family: 'fontGame';
+    src: url('../../../assets/imgGame/Pony.ttf');
 }
