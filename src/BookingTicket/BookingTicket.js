@@ -31,6 +31,7 @@ export default class BookingTicket extends Component {
                             <div className="col-4">
                                 <div className="text-light" style={{fontSize:"35px"}}>Selected Seat</div>
                                 <ThongTindDatGhe/>
+                                
                         </div>
                         </div>
                     </div>
