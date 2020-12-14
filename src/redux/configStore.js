@@ -5,6 +5,7 @@ import {GioHangReducer} from '../redux/GioHangReducer';
 import { BaiTapGameXucXacReducer } from './BaiTapGameXucXacReducer';
 import { QuanLySinhVienReducer } from './QuanLySinhVienReducer';
 import {BookingTicketReducer} from '../redux/Reducer/BookingTicketReducer'
+import BaiTapOanTuXiReducer from './Reducer/BaiTapOanTuXiReducer';
 
 
 
@@ -15,6 +16,7 @@ const rootReducer=combineReducers({
     stateGameXucXac:BaiTapGameXucXacReducer,
     stateQuanLySinhVien:QuanLySinhVienReducer,
     stateBookingTicket:BookingTicketReducer,
+    stateBaiTapOanTuXi:BaiTapOanTuXiReducer
    
 
    

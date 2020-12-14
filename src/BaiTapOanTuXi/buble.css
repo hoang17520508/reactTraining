@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'fontGame';
+    src: url('../assets/imgGame/Pony.ttf');
+}
+
 .speech-bubble {
 	position: relative;
 	background: #45D994;
@@ -32,8 +37,10 @@
 	height: 100%;
 	background-image: url('../assets/bgGame.png');
 	background-size: cover;
+	font-family: 'fontGame';
 }
 .btnItem>img{
 	width: 60px;
 	height: 60px;
 }
+

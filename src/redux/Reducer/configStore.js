@@ -6,10 +6,12 @@ import {BookingTicketReducer} from './BookingTicketReducer';
 
 
 
+
 const rootReducer=combineReducers({
     // các sate sau này khai báo tại dâdy
    
    stateBookingTicket:BookingTicketReducer,
+   
    
 
    
