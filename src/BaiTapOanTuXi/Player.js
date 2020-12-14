@@ -6,7 +6,7 @@ export default class Player extends Component {
             <div className="text-center">
                 <div className="theThink">
                 
-                           <img style={{height:"100px",width:"100px"}} src="./img/GameOanTuXi/bao.png" />
+                           <img style={{height:"100px",width:"100px"}} src="./img/GameOanTuXi/bao.png" />  
                        
                 </div>
                 <div className="speech-bubble"></div>
